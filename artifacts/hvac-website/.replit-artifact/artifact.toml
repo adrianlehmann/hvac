@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Heating & Air Conditioning New Haven"
+version = "1.0.0"
+id = "artifacts/hvac-website"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 26238
+
+[services.development]
+run = "pnpm --filter @workspace/hvac-website run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/hvac-website", "run", "build" ]
+publicDir = "artifacts/hvac-website/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "26238"
+BASE_PATH = "/"

@@ -1,0 +1,315 @@
+Create a modern, high-converting HVAC company website for a local business called **Heating & Air Conditioning New Haven**.
+
+## Business Information
+
+**Company Name:** Heating & Air Conditioning New Haven
+
+**Address:** 426 Whalley Ave, New Haven, CT 06511
+
+**Business Description:**
+"Breathe easy with Heating & Air Conditioning New Haven, your trusted local experts for complete climate control. Serving the New Haven area from our convenient location, we specialize in creating comfortable and healthy indoor environments. As a premier heating, ventilation, and air conditioning contractor, we offer tailored solutions to keep your home or business perfectly temperate, no matter the season. Let us ensure your comfort year-round."
+
+## Opening Hours
+
+* Monday: 7:00 AM – 8:00 PM
+* Tuesday: 7:00 AM – 8:00 PM
+* Wednesday: 7:00 AM – 8:00 PM
+* Thursday: 7:00 AM – 8:00 PM
+* Friday: 7:00 AM – 8:00 PM
+* Saturday: 7:00 AM – 7:00 PM
+* Sunday: 7:00 AM – 8:00 PM
+
+---
+
+## Website Requirements
+
+Build a responsive, modern, premium-looking HVAC website with:
+
+* Clean professional design
+* Mobile-first responsive layout
+* Fast loading performance
+* SEO optimized structure
+* Local business schema markup
+* Smooth scrolling navigation
+* CTA buttons throughout
+* Modern animations and hover effects
+* Professional HVAC color palette (dark blue, white, light gray, orange accents)
+
+---
+
+## Navigation Menu
+
+1. Home
+2. Services
+3. About
+4. Reviews
+5. Service Areas
+6. Contact
+
+Sticky navigation on scroll.
+
+---
+
+## Hero Section
+
+Headline:
+
+# Heating & Air Conditioning New Haven
+
+Subheadline:
+
+Trusted Heating & Cooling Experts Serving New Haven and Surrounding Communities
+
+Supporting text:
+
+Professional HVAC installation, repair, maintenance, boilers, furnaces, heat pumps, air conditioning systems, thermostat upgrades, and indoor air quality solutions.
+
+Buttons:
+
+* Request Service
+* Get Free Estimate
+
+Include:
+
+* Background image of HVAC technician working on a modern HVAC system
+* Trust badges
+* "Same-Day Service Available"
+* "Locally Trusted"
+* "Licensed & Experienced"
+
+---
+
+## Services Section
+
+Create service cards with icons.
+
+### Heating Services
+
+* Furnace Repair
+* Furnace Installation
+* Boiler Repair
+* Boiler Installation
+* Heat Pump Services
+* Emergency Heating Repair
+
+### Cooling Services
+
+* AC Repair
+* AC Installation
+* AC Maintenance
+* Ductless Mini Split Systems
+* Heat Pump Cooling
+* Thermostat Installation
+
+### Indoor Comfort
+
+* Air Quality Solutions
+* Smart Thermostats
+* HVAC Maintenance Plans
+* Energy Efficiency Upgrades
+* Ventilation Services
+* Seasonal Tune-Ups
+
+Each service should have a short professional description.
+
+---
+
+## Why Choose Us Section
+
+Create 6 feature cards:
+
+### Experienced Technicians
+
+Knowledgeable HVAC professionals committed to quality workmanship.
+
+### Fast Response Times
+
+Prompt scheduling and reliable service when you need it most.
+
+### Transparent Pricing
+
+Upfront estimates with no hidden surprises.
+
+### Quality Equipment
+
+Trusted products and proven HVAC solutions.
+
+### Customer Satisfaction
+
+Focused on delivering exceptional service experiences.
+
+### Year-Round Comfort
+
+Keeping homes and businesses comfortable in every season.
+
+---
+
+## About Section
+
+Title:
+
+### Your Local HVAC Specialists in New Haven
+
+Content:
+
+Heating & Air Conditioning New Haven provides dependable heating, cooling, and indoor comfort services for residential and commercial customers. Our team is dedicated to delivering tailored HVAC solutions that maximize comfort, efficiency, and reliability. From emergency repairs to complete system installations, we focus on quality workmanship and customer satisfaction every step of the way.
+
+Include:
+
+* Mission statement
+* Years of expertise presentation
+* Professional image
+* Company values
+
+---
+
+## Customer Reviews Section
+
+Create an attractive testimonials slider.
+
+Use these reviews:
+
+Review 1:
+
+"The service from Heating & Air Conditioning New Haven was first-rate. The technician was prompt, courteous, and well-informed. He took the time to describe the issue and his solution. The entire process was simple, and the pricing was reasonable. If we ever require heating assistance, I will give Heating & Air Conditioning New Haven another call."
+
+Review 2:
+
+"Working with Heating & Air Conditioning New Haven was a pleasure. They arrived promptly, identified the issue, and immediately got our heater operating again. The technician was professional, kind, and informed. Their excellent customer service and clear prices were greatly appreciated. Without a doubt, I will give Heating & Air Conditioning New Haven another call in the future."
+
+Review 3:
+
+"Cannot say enough good things about Heating & Air Conditioning New Haven. I called to inquire about having our boiler wiring tweaked so we'd be able to install wireless thermostats. We agreed on a time for the next day, he called in advance, showed up on time, completed the work, verified everything functioned properly, and we were done. Highly recommended."
+
+Review 4:
+
+"Excellent experience. My furnace wasn't heating half of the house. Called on a Sunday and they responded quickly. The technician arrived the next morning, identified the issue fast, completed the repair, and restored heat throughout the home. Great service."
+
+Review 5:
+
+"They came out the next day and fixed my AC in under an hour. Outstanding work, fair pricing, and excellent customer service. Highly recommended."
+
+Review 6:
+
+"I chose them for a heat pump installation after comparing multiple companies. The process was seamless, the team was professional, and they helped us understand our new smart thermostat. Highly recommend."
+
+Review 7:
+
+"We have used this company for years to maintain our heating system. They replaced our boiler and later installed central air conditioning. The workmanship was excellent and everything was completed professionally."
+
+Display review stars and customer avatars.
+
+---
+
+## Service Areas Section
+
+Create a grid listing:
+
+* New Haven
+* West Haven
+* Hamden
+* East Haven
+* North Haven
+* Branford
+* Orange
+* Milford
+* Woodbridge
+* Guilford
+
+Add supporting text:
+
+Providing dependable HVAC services throughout Greater New Haven.
+
+---
+
+## Process Section
+
+Show a 4-step process:
+
+1. Contact Us
+2. Schedule Service
+3. Expert Diagnosis
+4. Comfort Restored
+
+Include icons and connecting graphics.
+
+---
+
+## FAQ Section
+
+Create accordion FAQs:
+
+Q: Do you provide emergency HVAC service?
+A: Yes, we offer prompt service for urgent heating and cooling issues.
+
+Q: Do you install heat pumps?
+A: Yes, we provide heat pump installation, replacement, and maintenance services.
+
+Q: How often should HVAC systems be serviced?
+A: Most systems benefit from professional maintenance twice per year.
+
+Q: Can smart thermostats improve efficiency?
+A: Smart thermostats can help optimize comfort and reduce energy consumption.
+
+Q: Do you service both residential and commercial systems?
+A: Yes, we provide HVAC solutions for homes and businesses.
+
+---
+
+## Contact Section
+
+Display:
+
+Heating & Air Conditioning New Haven
+
+Address:
+426 Whalley Ave, New Haven, CT 06511
+
+Hours:
+Monday-Friday: 7:00 AM – 8:00 PM
+Saturday: 7:00 AM – 7:00 PM
+Sunday: 7:00 AM – 8:00 PM
+
+Include:
+
+* Contact form
+* Name field
+* Phone field
+* Email field
+* Service requested dropdown
+* Message field
+* Submit button
+
+Include embedded Google Map placeholder.
+
+---
+
+## Footer
+
+Include:
+
+* Company Name
+* Address
+* Hours
+* Quick Links
+* Services Links
+* Copyright Notice
+
+Add social media icons.
+
+---
+
+## Technical Requirements
+
+Use:
+
+* React
+* Tailwind CSS
+* Framer Motion animations
+* Responsive design
+* SEO metadata
+* Open Graph tags
+* Local Business JSON-LD schema
+* Lighthouse optimization best practices
+
+Create all content directly in the page with professional typography and modern UI components. Make the website look like a premium HVAC contractor website designed to maximize conversions and local SEO rankings.
