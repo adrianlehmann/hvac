@@ -38,9 +38,8 @@ const services = [
 ];
 
 const hours = [
-  { days: "Monday – Friday", time: "7:00 AM – 8:00 PM" },
-  { days: "Saturday", time: "7:00 AM – 7:00 PM" },
-  { days: "Sunday", time: "7:00 AM – 8:00 PM" },
+  { days: "Monday – Sunday", time: "Open 24 Hours" },
+  { days: "Emergency Service", time: "Available 24/7" },
 ];
 
 export default function Contact() {
@@ -106,8 +105,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-bold text-foreground mb-1">Address</p>
-                  <p className="text-muted-foreground text-sm">426 Whalley Ave</p>
-                  <p className="text-muted-foreground text-sm">New Haven, CT 06511</p>
+                  <p className="text-muted-foreground text-sm">1601 Westpark Dr Ste 7</p>
+                  <p className="text-muted-foreground text-sm">Little Rock, AR 72204</p>
                 </div>
               </div>
 
@@ -118,11 +117,11 @@ export default function Contact() {
                 <div>
                   <p className="font-bold text-foreground mb-1">Phone</p>
                   <a
-                    href="tel:+12034001234"
+                    href="tel:+15016313470"
                     className="text-orange-500 font-semibold hover:text-orange-600 transition-colors"
                     data-testid="contact-phone-link"
                   >
-                    (203) 400-1234
+                    (501) 631-3470
                   </a>
                 </div>
               </div>
@@ -189,7 +188,7 @@ export default function Contact() {
                         <FormLabel>Phone Number</FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="(203) 555-0100"
+                            placeholder="(501) 555-0100"
                             type="tel"
                             {...field}
                             data-testid="input-phone"

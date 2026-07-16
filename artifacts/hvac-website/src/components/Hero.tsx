@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import { CheckCircle, Shield, Zap } from "lucide-react";
 
 const badges = [
-  { icon: Zap, label: "Same-Day Service Available" },
-  { icon: Shield, label: "Licensed & Experienced" },
-  { icon: CheckCircle, label: "Locally Trusted" },
+  { icon: Zap, label: "Open 24 Hours — Same-Day Service" },
+  { icon: Shield, label: "Professional & Punctual" },
+  { icon: CheckCircle, label: "Trusted in Little Rock" },
 ];
 
 export default function Hero() {
@@ -56,8 +56,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
           >
-            Heating & Air Conditioning{" "}
-            <span className="text-orange-400">New Haven</span>
+            CrackerJack{" "}
+            <span className="text-orange-400">Air Pros</span>
           </motion.h1>
 
           <motion.p
@@ -66,8 +66,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.25 }}
           >
-            Trusted Heating & Cooling Experts Serving New Haven and Surrounding
-            Communities
+            Trusted Heating & Cooling Experts Serving Little Rock and Central
+            Arkansas — Available 24 Hours a Day
           </motion.p>
 
           <motion.p
@@ -76,9 +76,10 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.35 }}
           >
-            Professional HVAC installation, repair, maintenance, boilers,
-            furnaces, heat pumps, air conditioning systems, thermostat upgrades,
-            and indoor air quality solutions.
+            Professional HVAC installation, repair, and maintenance —
+            air conditioning, furnaces, heat pumps, ductwork, thermostat
+            upgrades, and indoor air quality solutions. Prompt, honest, and
+            high-quality service, every time.
           </motion.p>
 
           <motion.div

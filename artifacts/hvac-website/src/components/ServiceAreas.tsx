@@ -2,16 +2,16 @@ import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 
 const areas = [
-  "New Haven",
-  "West Haven",
-  "Hamden",
-  "East Haven",
-  "North Haven",
-  "Branford",
-  "Orange",
-  "Milford",
-  "Woodbridge",
-  "Guilford",
+  "Little Rock",
+  "North Little Rock",
+  "Sherwood",
+  "Maumelle",
+  "Jacksonville",
+  "Benton",
+  "Bryant",
+  "Cabot",
+  "Conway",
+  "Alexander",
 ];
 
 export default function ServiceAreas() {
@@ -33,11 +33,11 @@ export default function ServiceAreas() {
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground mb-4"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
-            Serving Greater New Haven
+            Serving Greater Little Rock
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Providing dependable HVAC services throughout the Greater New Haven
-            area and surrounding communities.
+            Providing dependable HVAC services throughout Little Rock and the
+            surrounding Central Arkansas communities.
           </p>
         </motion.div>
 
@@ -81,7 +81,7 @@ export default function ServiceAreas() {
           </h3>
           <p className="text-white/70 text-base max-w-md">
             Give us a call or send a message — we serve many communities
-            throughout Connecticut and are happy to discuss your needs.
+            throughout Central Arkansas and are happy to discuss your needs.
           </p>
           <button
             onClick={() => {

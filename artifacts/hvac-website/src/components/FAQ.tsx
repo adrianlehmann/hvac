@@ -9,7 +9,11 @@ import {
 const faqs = [
   {
     q: "Do you provide emergency HVAC service?",
-    a: "Yes, we offer prompt service for urgent heating and cooling issues. We understand that HVAC emergencies don't follow a schedule, which is why we're available 7 days a week to help restore your comfort as quickly as possible.",
+    a: "Yes. We're open 24 hours a day, 7 days a week for urgent heating and cooling issues. HVAC emergencies don't follow a schedule, so whether it's the middle of a heat wave or a cold December evening, we respond quickly — often the same day — to restore your comfort.",
+  },
+  {
+    q: "What areas do you serve?",
+    a: "We're based in Little Rock and proudly serve Central Arkansas, including North Little Rock, Sherwood, Maumelle, Jacksonville, Benton, Bryant, Cabot, Conway, and nearby communities. Not sure if you're in our area? Give us a call at (501) 631-3470.",
   },
   {
     q: "Do you install heat pumps?",

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import {
   MapPin,
   Clock,
+  Phone,
   Facebook,
   Twitter,
   Instagram,
@@ -29,9 +30,8 @@ const serviceLinks = [
 ];
 
 const hours = [
-  { days: "Monday – Friday", time: "7:00 AM – 8:00 PM" },
-  { days: "Saturday", time: "7:00 AM – 7:00 PM" },
-  { days: "Sunday", time: "7:00 AM – 8:00 PM" },
+  { days: "Monday – Sunday", time: "Open 24 Hours" },
+  { days: "Emergency Service", time: "Available 24/7" },
 ];
 
 export default function Footer() {
@@ -54,25 +54,35 @@ export default function Footer() {
           >
             <div className="mb-4">
               <p
-                className="text-white/70 text-sm font-semibold tracking-wide uppercase"
+                className="text-white text-2xl font-extrabold tracking-wider"
                 style={{ fontFamily: "Montserrat, sans-serif" }}
               >
-                Heating & Air Conditioning
+                CrackerJack
               </p>
               <p
-                className="text-orange-400 text-2xl font-extrabold tracking-wider"
+                className="text-orange-400 text-lg font-extrabold tracking-widest uppercase"
                 style={{ fontFamily: "Montserrat, sans-serif" }}
               >
-                New Haven
+                Air Pros
               </p>
             </div>
             <p className="text-white/50 text-sm leading-relaxed mb-6">
-              Your trusted local HVAC experts serving New Haven and surrounding
-              communities. Licensed, experienced, and committed to your comfort.
+              Your trusted local HVAC experts serving Little Rock and Central
+              Arkansas. Responsive, professional, and available 24 hours a day
+              for your comfort.
             </p>
             <div className="flex items-center gap-2 text-white/50 text-sm mb-2">
               <MapPin className="w-4 h-4 flex-shrink-0 text-orange-400" />
-              <span>426 Whalley Ave, New Haven, CT 06511</span>
+              <span>1601 Westpark Dr Ste 7, Little Rock, AR 72204</span>
+            </div>
+            <div className="flex items-center gap-2 text-white/50 text-sm">
+              <Phone className="w-4 h-4 flex-shrink-0 text-orange-400" />
+              <a
+                href="tel:+15016313470"
+                className="hover:text-orange-400 transition-colors"
+              >
+                (501) 631-3470
+              </a>
             </div>
           </motion.div>
 
@@ -154,11 +164,11 @@ export default function Footer() {
         {/* Divider + copyright */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-sm text-center sm:text-left">
-            &copy; {new Date().getFullYear()} Heating & Air Conditioning New
-            Haven. All rights reserved.
+            &copy; {new Date().getFullYear()} CrackerJack Air Pros. All rights
+            reserved.
           </p>
           <p className="text-white/20 text-xs">
-            426 Whalley Ave, New Haven, CT 06511
+            1601 Westpark Dr Ste 7, Little Rock, AR 72204
           </p>
         </div>
       </div>

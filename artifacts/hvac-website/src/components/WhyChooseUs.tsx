@@ -3,41 +3,41 @@ import {
   UserCheck,
   Clock,
   DollarSign,
-  Package,
-  Heart,
+  Award,
+  Zap,
   Sun,
 } from "lucide-react";
 
 const features = [
   {
-    icon: UserCheck,
-    title: "Experienced Technicians",
-    desc: "Knowledgeable HVAC professionals committed to quality workmanship on every job.",
+    icon: Zap,
+    title: "Responsiveness",
+    desc: "Call and we answer. We're open 24 hours and often come out the same day — a huge relief when the Arkansas heat hits.",
   },
   {
     icon: Clock,
-    title: "Fast Response Times",
-    desc: "Prompt scheduling and reliable service when you need it most — including weekends.",
+    title: "Punctuality",
+    desc: "We arrive when we say we will, and we let you know in advance if we're running even a little late.",
+  },
+  {
+    icon: Award,
+    title: "Quality",
+    desc: "Thorough diagnostics and high-quality workmanship that gets the job done right the first time.",
+  },
+  {
+    icon: UserCheck,
+    title: "Professionalism",
+    desc: "Knowledgeable, honest, and respectful technicians who explain your options clearly and treat your home with care.",
   },
   {
     icon: DollarSign,
-    title: "Transparent Pricing",
-    desc: "Upfront estimates with no hidden surprises — you always know what to expect.",
-  },
-  {
-    icon: Package,
-    title: "Quality Equipment",
-    desc: "Trusted products and proven HVAC solutions backed by manufacturer warranties.",
-  },
-  {
-    icon: Heart,
-    title: "Customer Satisfaction",
-    desc: "Focused on delivering exceptional service experiences from first call to final walkthrough.",
+    title: "Value",
+    desc: "Fair, upfront pricing with several options to fit your budget — no hidden surprises.",
   },
   {
     icon: Sun,
     title: "Year-Round Comfort",
-    desc: "Keeping homes and businesses comfortable in every season, all year long.",
+    desc: "Keeping Little Rock homes and businesses comfortable in every season, all year long.",
   },
 ];
 
@@ -62,7 +62,7 @@ export default function WhyChooseUs() {
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4"
             style={{ fontFamily: "Montserrat, sans-serif" }}
           >
-            The New Haven Standard
+The CrackerJack Standard
           </h2>
           <p className="text-white/70 text-lg max-w-2xl mx-auto">
             We built our reputation one satisfied customer at a time. Here is

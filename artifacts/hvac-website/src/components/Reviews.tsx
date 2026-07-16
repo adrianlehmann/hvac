@@ -4,46 +4,34 @@ import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 const reviews = [
   {
-    initials: "MT",
+    initials: "JT",
     color: "hsl(215,70%,45%)",
-    name: "M.T.",
-    text: "The service from Heating & Air Conditioning New Haven was first-rate. The technician was prompt, courteous, and well-informed. He took the time to describe the issue and his solution. The entire process was simple, and the pricing was reasonable. If we ever require heating assistance, I will give Heating & Air Conditioning New Haven another call.",
+    name: "Jessica T.",
+    text: "The experience that I have had with this company has been remarkable. I enjoyed the phone call, the service, just everything. They are awesome at letting you know if they will be running a little late. They are very professional, prompt, and give high quality service. Brandon and Mark have been such a pleasure to do business with! Every time I call they usually come same day which is very much so appreciated with how hot it's been! Don't take my word for it — try them out yourself!",
   },
   {
-    initials: "SR",
+    initials: "MR",
     color: "hsl(24,85%,50%)",
-    name: "S.R.",
-    text: "Working with Heating & Air Conditioning New Haven was a pleasure. They arrived promptly, identified the issue, and immediately got our heater operating again. The technician was professional, kind, and informed. Their excellent customer service and clear prices were greatly appreciated. Without a doubt, I will give Heating & Air Conditioning New Haven another call in the future.",
+    name: "Michael R.",
+    text: "Brandon was absolutely the best! I called, he came out same day, was very informative, honest and upfront, and got my heat working on a cold December evening. Would definitely recommend!",
   },
   {
-    initials: "DL",
+    initials: "DC",
     color: "hsl(160,60%,35%)",
-    name: "D.L.",
-    text: "Cannot say enough good things about Heating & Air Conditioning New Haven. I called to inquire about having our boiler wiring tweaked so we would be able to install wireless thermostats. We agreed on a time for the next day, he called in advance, showed up on time, completed the work, verified everything functioned properly, and we were done. Highly recommended.",
+    name: "David C.",
+    text: "I was awakened this morning to find water gushing out of my yard. The line had burst. I found Cracker Jack, who had great recent reviews, so I gave them a shot and I am so glad I did. I called at 8:30am and got an appointment for 3. David showed up early and the repair was done by 5pm. Brittany, their dispatcher, did a great job keeping me updated. I was presented with pictures showing the problem and the fix. Very pleased.",
   },
   {
-    initials: "JK",
+    initials: "KS",
     color: "hsl(270,55%,45%)",
-    name: "J.K.",
-    text: "Excellent experience. My furnace was not heating half of the house. Called on a Sunday and they responded quickly. The technician arrived the next morning, identified the issue fast, completed the repair, and restored heat throughout the home. Great service.",
-  },
-  {
-    initials: "PW",
-    color: "hsl(340,70%,45%)",
-    name: "P.W.",
-    text: "They came out the next day and fixed my AC in under an hour. Outstanding work, fair pricing, and excellent customer service. Highly recommended.",
-  },
-  {
-    initials: "CM",
-    color: "hsl(195,75%,35%)",
-    name: "C.M.",
-    text: "I chose them for a heat pump installation after comparing multiple companies. The process was seamless, the team was professional, and they helped us understand our new smart thermostat. Highly recommend.",
+    name: "Karen S.",
+    text: "I had Crackerjack Pros come out and give an estimate on replacing my duct system. I met with Shane and he was very informative, friendly, plus their price was most reasonable. We had a small glitch at the beginning but they were right on top of it to solve the problem. They came when they said, did a fantastic job, and were done on time. I would highly recommend them to anybody that needs any kind of air conditioning work.",
   },
   {
     initials: "RB",
-    color: "hsl(45,80%,40%)",
-    name: "R.B.",
-    text: "We have used this company for years to maintain our heating system. They replaced our boiler and later installed central air conditioning. The workmanship was excellent and everything was completed professionally.",
+    color: "hsl(340,70%,45%)",
+    name: "Robert B.",
+    text: "Called Shane at Cracker Jack Air Pros and had a technician out within a few hours. Storm was professional, punctual, and very knowledgeable. They did an inspection on our unit and gave me all the information needed with several options to fix our issues. He was polite and respectful of our home. We received our invoice and estimates in a timely manner and are happy with our service with all members of the company! Thank you Cracker Jack Air Pros.",
   },
 ];
 
@@ -79,7 +67,7 @@ export default function Reviews() {
             What Our Customers Say
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Real words from real New Haven homeowners who trusted us with their
+            Real words from real Little Rock homeowners who trusted us with their
             comfort.
           </p>
         </motion.div>
@@ -122,7 +110,7 @@ export default function Reviews() {
                   <div>
                     <p className="font-bold text-foreground">{review.name}</p>
                     <p className="text-muted-foreground text-sm">
-                      New Haven Area Customer
+                      Little Rock Area Customer
                     </p>
                   </div>
                 </div>

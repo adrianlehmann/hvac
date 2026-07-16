@@ -1,4 +1,4 @@
-import { Award, Users, ThumbsUp, Shield } from "lucide-react";
+import { Award, Users, ThumbsUp, Zap, Clock, DollarSign } from "lucide-react";
 
 const stats = [
   { value: "15+", label: "Years of Experience" },
@@ -8,10 +8,12 @@ const stats = [
 ];
 
 const values = [
-  { icon: Award, label: "Quality Workmanship" },
-  { icon: Users, label: "Customer-First Approach" },
+  { icon: Zap, label: "Responsiveness" },
+  { icon: Clock, label: "Punctuality" },
+  { icon: Award, label: "Quality" },
+  { icon: Users, label: "Professionalism" },
+  { icon: DollarSign, label: "Value" },
   { icon: ThumbsUp, label: "Honest Recommendations" },
-  { icon: Shield, label: "Reliability You Can Count On" },
 ];
 
 export default function About() {
@@ -127,7 +129,7 @@ export default function About() {
                   </text>
                 ))}
                 <text x="200" y="288" fontSize="11" fill="white" textAnchor="middle" opacity="0.7">
-                  Trusted by New Haven Homeowners
+                  Trusted by Little Rock Homeowners
                 </text>
               </svg>
 
@@ -153,20 +155,20 @@ export default function About() {
               className="text-3xl sm:text-4xl font-extrabold text-foreground mb-6"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
-              Your Local HVAC Specialists in New Haven
+              Your Local HVAC Specialists in Little Rock
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed mb-6">
-              Heating & Air Conditioning New Haven provides dependable heating, cooling, and indoor comfort services for residential and commercial customers. Our team is dedicated to delivering tailored HVAC solutions that maximize comfort, efficiency, and reliability.
+              CrackerJack Air Pros provides dependable heating, cooling, and indoor comfort services for residential and commercial customers across Little Rock and Central Arkansas. Our team is dedicated to delivering tailored HVAC solutions that maximize comfort, efficiency, and reliability.
             </p>
             <p className="text-muted-foreground text-base leading-relaxed mb-8">
-              From emergency repairs to complete system installations, we focus on quality workmanship and customer satisfaction every step of the way. We are not a national chain — we are your neighbors, invested in this community.
+              From emergency repairs to complete system installations, we focus on responsiveness, punctuality, and quality workmanship every step of the way. Open 24 hours, our technicians — like Brandon, Mark, Shane, and Storm — show up on time, communicate clearly, and treat your home with respect.
             </p>
 
             {/* Mission */}
             <div className="border-l-4 border-orange-500 pl-4 mb-8">
               <p className="text-foreground font-semibold italic">
-                "Our mission is simple: deliver honest, high-quality HVAC service that keeps New Haven families comfortable all year long."
+                "Our mission is simple: deliver honest, high-quality HVAC service that keeps Little Rock families comfortable all year long — day or night."
               </p>
             </div>
 

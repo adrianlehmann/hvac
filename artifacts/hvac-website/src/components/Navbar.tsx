@@ -49,16 +49,16 @@ export default function Navbar() {
             data-testid="nav-logo"
           >
             <span
-              className="text-white font-bold text-sm sm:text-base tracking-wide"
+              className="text-white font-extrabold text-base sm:text-lg tracking-wider"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
-              HEATING & AIR CONDITIONING
+              CRACKERJACK
             </span>
             <span
-              className="text-orange-400 font-extrabold text-base sm:text-lg tracking-wider"
+              className="text-orange-400 font-extrabold text-sm sm:text-base tracking-widest"
               style={{ fontFamily: "Montserrat, sans-serif" }}
             >
-              NEW HAVEN
+              AIR PROS
             </span>
           </button>
 
@@ -74,12 +74,12 @@ export default function Navbar() {
               </button>
             ))}
             <a
-              href="tel:+12034001234"
+              href="tel:+15016313470"
               className="flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-md text-sm font-semibold transition-colors duration-200"
               data-testid="nav-phone-cta"
             >
               <Phone className="w-4 h-4" />
-              Call Now
+              (501) 631-3470
             </a>
           </nav>
 
@@ -117,12 +117,12 @@ export default function Navbar() {
               </button>
             ))}
             <a
-              href="tel:+12034001234"
+              href="tel:+15016313470"
               className="flex items-center justify-center gap-2 bg-orange-500 text-white py-3 rounded-md font-semibold mt-2"
               data-testid="mobile-nav-phone-cta"
             >
               <Phone className="w-4 h-4" />
-              Call Now
+              (501) 631-3470
             </a>
           </div>
         </motion.div>
