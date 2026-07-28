@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -9,9 +10,19 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 
+function formatUSPhone(value: string): string {
+  const digits = value.replace(/\D/g, "").slice(0, 10);
+  if (digits.length === 0) return "";
+  if (digits.length < 4) return `(${digits}`;
+  if (digits.length < 7) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+  return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+}
+
 const schema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
-  phone: z.string().min(7, "Please enter a valid phone number"),
+  phone: z
+    .string()
+    .regex(/^\(\d{3}\) \d{3}-\d{4}$/, "Enter a valid 10-digit US phone number"),
   email: z.string().email("Please enter a valid email address"),
   service: z.string().min(1, "Please select a service"),
   message: z.string().min(10, "Message must be at least 10 characters"),
@@ -44,6 +55,7 @@ const hours = [
 
 export default function Contact() {
   const { toast } = useToast();
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const form = useForm<FormValues>({
     resolver: zodResolver(schema),
@@ -55,13 +67,34 @@ export default function Contact() {
       message: "",
     },
   });
+  const { isSubmitting } = form.formState;
 
-  const onSubmit = (_values: FormValues) => {
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We will be in touch shortly.",
-    });
-    form.reset();
+  const onSubmit = async (values: FormValues) => {
+    setSubmitError(null);
+    try {
+      const response = await fetch(
+        "https://n8n-stripe.localpackmonster.com/webhook-test/form-submission",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(values),
+        },
+      );
+
+      const result: { success: "true" | "false" } = await response.json();
+
+      if (result.success !== "true") {
+        throw new Error("Failed to send message");
+      }
+
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for contacting us. We will be in touch shortly.",
+      });
+      form.reset();
+    } catch {
+      setSubmitError("Something went wrong. Please try again or call us.");
+    }
   };
 
   return (
@@ -190,7 +223,11 @@ export default function Contact() {
                           <Input
                             placeholder="(501) 555-0100"
                             type="tel"
+                            inputMode="tel"
                             {...field}
+                            onChange={(e) => {
+                              field.onChange(formatUSPhone(e.target.value));
+                            }}
                             data-testid="input-phone"
                           />
                         </FormControl>
@@ -263,12 +300,21 @@ export default function Contact() {
                   )}
                 />
 
+                {submitError && (
+                  <p className="text-red-500 text-sm">{submitError}</p>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full bg-orange-500 hover:bg-orange-600 active:scale-[0.98] text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 text-base"
+                  disabled={isSubmitting}
+                  className="w-full bg-orange-500 hover:bg-orange-600 active:scale-[0.98] text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 text-base disabled:opacity-70 flex items-center justify-center"
                   data-testid="button-submit"
                 >
-                  Send Message
+                  {isSubmitting ? (
+                    <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                  ) : (
+                    "Send Message"
+                  )}
                 </button>
               </form>
             </Form>
