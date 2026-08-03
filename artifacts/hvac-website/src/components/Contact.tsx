@@ -10,11 +10,17 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 
-function formatUSPhone(value: string): string {
+function formatUSPhone(value: string, isDeleting = false): string {
   const digits = value.replace(/\D/g, "").slice(0, 10);
   if (digits.length === 0) return "";
-  if (digits.length < 4) return `(${digits}`;
-  if (digits.length < 7) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+  if (digits.length < 3) return `(${digits}`;
+  if (digits.length === 3) return isDeleting ? `(${digits}` : `(${digits}) `;
+  if (digits.length < 6) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+  if (digits.length === 6) {
+    return isDeleting
+      ? `(${digits.slice(0, 3)}) ${digits.slice(3)}`
+      : `(${digits.slice(0, 3)}) ${digits.slice(3)}-`;
+  }
   return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
 }
 
@@ -226,7 +232,9 @@ export default function Contact() {
                             inputMode="tel"
                             {...field}
                             onChange={(e) => {
-                              field.onChange(formatUSPhone(e.target.value));
+                              const next = e.target.value;
+                              const isDeleting = next.length < field.value.length;
+                              field.onChange(formatUSPhone(next, isDeleting));
                             }}
                             data-testid="input-phone"
                           />
