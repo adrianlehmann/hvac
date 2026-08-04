@@ -25,13 +25,18 @@ function formatUSPhone(value: string, isDeleting = false): string {
 }
 
 const schema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
+  name: z.string().min(1, "Name is required"),
   phone: z
     .string()
+    .min(1, "Phone is required")
     .regex(/^\(\d{3}\) \d{3}-\d{4}$/, "Enter a valid 10-digit US phone number"),
-  email: z.string().email("Please enter a valid email address"),
+  email: z
+    .string()
+    .email("Please enter a valid email address")
+    .optional()
+    .or(z.literal("")),
   service: z.string().min(1, "Please select a service"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
+  message: z.string().optional(),
 });
 
 type FormValues = z.infer<typeof schema>;
@@ -207,7 +212,7 @@ export default function Contact() {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Full Name</FormLabel>
+                        <FormLabel>Full Name *</FormLabel>
                         <FormControl>
                           <Input
                             placeholder="John Smith"
@@ -224,7 +229,7 @@ export default function Contact() {
                     name="phone"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Phone Number</FormLabel>
+                        <FormLabel>Phone Number *</FormLabel>
                         <FormControl>
                           <Input
                             placeholder="(501) 555-0100"
@@ -269,7 +274,7 @@ export default function Contact() {
                   name="service"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Service Requested</FormLabel>
+                      <FormLabel>Service Requested *</FormLabel>
                       <Select onValueChange={field.onChange} value={field.value}>
                         <FormControl>
                           <SelectTrigger data-testid="select-service">
