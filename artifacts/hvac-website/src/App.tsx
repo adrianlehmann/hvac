@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Phone } from "lucide-react";
 import { Toaster } from "@/components/ui/toaster";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -31,6 +32,30 @@ function App() {
           <Contact />
         </main>
         <Footer />
+
+        <a
+          href="tel:+15016313470"
+          className="lg:hidden fixed bottom-6 right-6 z-50 bg-orange-500 text-white rounded-full py-4 px-6 shadow-2xl flex items-center gap-2 font-bold hover:bg-orange-600 transition-transform hover:scale-105 active:scale-95 animate-bounce-short"
+          aria-label="Call Now"
+          data-testid="mobile-floating-call"
+        >
+          <Phone className="w-5 h-5" />
+          (501) 631-3470
+        </a>
+
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+              @keyframes bounce-short {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-5px); }
+              }
+              .animate-bounce-short {
+                animation: bounce-short 3s ease-in-out infinite;
+              }
+            `,
+          }}
+        />
       </div>
       <Toaster />
     </QueryClientProvider>
